@@ -97,7 +97,8 @@ public class Caller extends BodyTagSupport{
 				  * pageContext.getOut().print("<tr> <td>  <input type=\"checkbox\" id=\"rs.getString(4)\" name=\"extraProductsList\" value=\"\">\r\n" + 
 				 		"                    <label for =\"extraProductsList\">" + rs.getString(4)+"</label> </td></tr>");
 				  * */
-				// String s=rs.getString(1);
+				String s=rs.getString(4)+",";
+				
 				 pageContext.getOut().print("<tr> <td>  <input type=\"checkbox\" id="+rs.getString(4)+" name=\"extraProductsList\" value="+rs.getString(4)+">\r\n" + 
 					 		"                    <label for =\"extraProductsList\">" + rs.getString(4)+"</label> </td><td><select id=\"categoryList\" name=\"categoryList\">\r\n" + 
 					 				"      <option value="+rs.getString(4)+">"+ rs.getString(4)+"</option>\r\n" + 
