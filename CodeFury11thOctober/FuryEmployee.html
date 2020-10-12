@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="CodeFuryEmployee11Oct.css" />
+    <link rel="stylesheet" href="FuryEmployee.css" />
 </head>
 <style>
   
@@ -27,17 +27,17 @@
             <div class="card-body">
         <div class="login-box">
           <h1> Employee Login</h1>
-          <form action="" method=""> 
+          <form action="" method="" class="employeeLoginForm"> 
             <div class="form-group" class="textbox">
-              <label for="exampleInputEmail1"></label>
-              <input type="email" class="form-control" id="employeeId" aria-describedby="emailHelp" placeholder="Userid">
+              <label for="employeeId"></label>
+              <input type="text" class="form-control" id="employeeId" name="employeeId" aria-describedby="emailHelp" placeholder="Userid" required>
             </div>
             <div class="form-group" class="textbox">
-              <label for="exampleInputPassword1"></label>
-              <input type="password" class="form-control" id="employeePassword" placeholder="Password">
+              <label for="employeePassword"></label>
+              <input type="password" class="form-control" id="employeePassword" name="employeePassword" placeholder="Password" required>
             </div>
             <div class="form-group" >
-            <button type="submit" class="employeebutton">Login</button>
+            <input class="employeebutton" type="submit" value="Log In">
             </div>
 
           </form>
